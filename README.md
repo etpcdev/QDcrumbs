@@ -1,6 +1,7 @@
 
 
 # QDCrumbs
+![QDCrumbs logo](img/qdcrumbs.png "QDCrumbs")
 ## Quick & Dirty Breadcrumbs
 
 ## Description
@@ -9,7 +10,7 @@ This package provides a simple way to add dynamic breadcrumbs to a Flask applica
 QDcrumbs work in both the main Flask application and in Flask Blueprints, and currently support a single variable page, simply import qdcrumb from qdcrumbs and follow the examples below.
 
 ## Get started:
-Getting started with qdcrumbs is easy! Import the qdcrumb object (from qdcrumbs import qdcrumb) and follow the example below.
+Getting started with qdcrumbs is easy! Import the qdcrumb object and follow the example below.
 
 ### Examples
 The following examples work both in the main Flask app and Blueprints!
