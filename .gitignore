@@ -1,1 +1,6 @@
 __pycache__
+.venv
+tests/
+build/
+dist/
+src/qdcrumbs.egg-info
