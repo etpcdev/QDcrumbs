@@ -42,6 +42,17 @@ Breadcrumbs are provided as a list of the Breadcrumb class and have the followin
 - url     -->     Path to the current page/resource & preceding pages.
 - text    -->     Name of the current page/resource.
 
+### Changing app name
+By default, QDcrumbs assumes your Flask application has the name 'app' and was initialized in the following manner:
+```python
+app = Flask(__name__) #__name__ being 'app'
+```
+If your app uses a different name, you must change it on the qdcrumb object in your main python file:
+```python
+qdcrumb.set_app_name('your_app_name')
+```
+
+### HTML
 The breadcrumbs do not provide the site's root directory, this can be added manually trivially (see html jinja2 template example below).
 
 ```html
