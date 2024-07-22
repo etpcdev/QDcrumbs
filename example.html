@@ -1,0 +1,23 @@
+<!--
+To use qdcrumbs in a jinja2 template, the url can be accessed through
+breadcrumb.url and the name of the page that the url points to can be
+accessed through breadcrumb.text
+
+Breadcrumbs can have any name, but the attributes must be accessed via
+".url" and ".text".
+
+Below is a simple example to add classic style breadcrumbs.
+-->
+<div>
+    <!--
+        Include a static link to the site root (Index.html)
+        (The Application's root must be added manually)
+    -->
+    <a href="{{ url_for('index.html')}}">Index</a>
+
+    <!--Loop through the breadcrumbs to this resource-->
+    {%- for breadcrumb in breadcrumbs -%}
+        <a href="{{ breadcrumb.url }}"> / {{ breadcrumb.text }}</a>
+    {%- endfor -%}
+
+</div>
