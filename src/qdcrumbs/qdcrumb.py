@@ -40,7 +40,6 @@ class QDCrumbs:
             if components:
                 crumb = '/' + '/'.join(components[:i])
                 text = components.pop()
-                print(text)
                 tmp = Breadcrumb(crumb, text)
                 crumbs.append(tmp)
         
